@@ -105,22 +105,6 @@ def prediction_model(data):
     val_predictions_rescaled = scaler.inverse_transform(val_predictions)
     y_val_rescaled = scaler.inverse_transform(y_val.reshape(-1, 1))
 
-    st.subheader("Training MSE Over Epochs")
-    mse = history.history['loss']
-
-    st.write(mse)
-    fig3, ax3 = plt.subplots()
-    epochs = range(1, len(mse) + 1)
-    ax3.plot(epochs, mse, marker='o', label='MSE')
-    for i, val in enumerate(mse):
-        ax3.text(epochs[i], val, f"{val:.4f}", ha='center', va='bottom', fontsize=8)
-
-    ax3.set_xlabel('Epoch')
-    ax3.set_ylabel('MSE')
-    ax3.set_title('Mean Squared Error Over Epochs')
-    ax3.grid(True)
-    ax3.legend()
-    st.pyplot(fig3)
 
     plt.figure(figsize=(10, 5))
     plt.plot(y_val_rescaled, label='Actual Price', linewidth=2)
