@@ -1,8 +1,5 @@
-As Streamlit cloud's oldest available version of Python is 3.9.22 and the code was built in PyCharm on Python 3.9.0
-there are mismatches in compatible versions of libraries that prevent it from being deployed to Streamlit cloud. 
-The raw files are available here on Github. 
-To launch the streamlit app locally, when downloaded with the correct packages and versions, 
-in the terminal, enter the command: streamlit run <file path>. On my system, this is:
-streamlit run "C:\Users\Sam's Folder\Final_Project_App\main.py"
-The quotations around the path is due to their being a space and apostrophe in my file path. it wouldnt be required for most paths. 
-In the demo video of the software, this process is shown.
+The software was programmed in PyCharm on Python 3.9.0. The oldest version of Streamlit Cloud is Python 3.9.22. This means that the mismatches in compatible versions of dependencies cause errors on Streamlit Cloud.
+The web app can still be accessed if the files and correct dependencies are downloaded (listed in requirements.txt). 
+In an IDE, the command: streamlit run <filepath\main.py> will launch the web app locally.
+For me, this is: streamlit run "C:\Users\Sam's Folder\Final_Project_App\main.py" (The quotation marks around the file path is because that specific file path contains a space and apostrophe)
+In the demo video for the project, the process of launching the app is shown.
