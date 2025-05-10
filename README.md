@@ -1,3 +1,5 @@
+w1834997 Final project App
+
 The software was programmed in PyCharm on Python 3.9.0. The oldest version of Streamlit Cloud is Python 3.9.22. This means that the mismatches in compatible versions of dependencies cause errors on Streamlit Cloud.
 The web app can still be accessed if the files and correct dependencies are downloaded (listed in requirements.txt). 
 In an IDE, the command: streamlit run <filepath\main.py> will launch the web app locally.
